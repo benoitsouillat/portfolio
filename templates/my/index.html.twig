@@ -1,20 +1,108 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MyController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/venture/lab/portfolio/src/Controller/MyController.php'|file_link(0) }}">src/Controller/MyController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/venture/lab/portfolio/templates/my/index.html.twig'|file_link(0) }}">templates/my/index.html.twig</a></code></li>
-    </ul>
-</div>
+<main>
+    <aside class="realisation">
+        <h3>Mes Réalisations</h3>
+        <div>
+            <h4>Le Domaine des Terres Noires</h4>
+            <p><a href="http://www.lecanecorso.fr" target="_blank" >lecanecorso.fr</a> est un site pour un élevage canin. <br/>Je l'administre moi-même pour l'instant, s'agissant d'une affaire de famille. <br/> </p>
+            <p>
+            <span class="underline">Les technologies utilisées :</span>
+                <ul class="techno">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Sass</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>Bootstrap</li>
+                    <li>Fancybox</li>
+                </ul>
+            <span class="underline">Les technologies à prévoir :</span>
+                <ul class="techno">
+                    <li>MySQL</li>
+                    <li>Laravel</li>
+                    <li>Symfony</li>
+                    <li>NodeJS</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <h4>La Romance des Damoiseaux</h4>
+            <p><a href="https://damoiseaux.lescigales.org/" target="_blank" >La Romance des Damoiseaux</a> est un site pour un élevage canin
+            ayant pour but de remplacer cette version du <a href="http://lewhippet.com" target="_blank">whippet.com</a> <br/> 
+            </p>
+            <p>
+            <span class="underline">Les technologies utilisées :</span>
+                <ul class="techno">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Sass</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>Bootstrap</li>
+                    <li>Fancybox</li>
+                </ul>
+            <span class="underline">Les technologies à prévoir :</span>
+                <ul class="techno">
+                    <li>MySQL</li>
+                    <li>Laravel</li>
+                    <li>Symfony</li>
+                    <li>NodeJS</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <h4>Réservia</h4>
+            <p><a href="https://benoitsouillat.github.io/" target="_blank" >Le Projet Réservia </a> est un projet que je fais et que j'améliore régulièrement durant ma formation d'OpenClassrooms afin d'apprendre à utiliser un maximum de technologie de développement web et d'être le plus autonome possible dans ce métier que j'affectionne. <br/>
+            L'objectif de ces exercices étant de coder "from scratch", je n'utilise sur ce projet aucun outil tel que Bootstrap ou Fancybox. <br/> 
+            </p>
+            <p>
+                <span class="underline">Les technologies utilisées :</span>
+                <ul class="techno">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <span class="underline">Les technologies à prévoir :</span>
+                <ul class="techno">
+                    <li>Sass</li>
+                    <li>ReactJS</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                </ul>
+            </p>
+        </div>
+    </aside>
+    <section class="index-flex">
+        <h1 class="welcome">Bienvenue sur mon portfolio</h1>
+        <section class="article">
+            <h2>Mon Parcours</h2>
+            <div>
+                <p>Je suis allé faire la piscine de 42 en Juillet 2019 pour me familiariser avec le code et surtout pour me retrouver dans un cluster pour être confronté à un environnement de travail et dans lequel je me suis fortement épanoui. <br/> Cependant pour des raisons économiques, j'ai du rapidement retrouver du travail et continuer ma passion pour l'informatique durant mon temps libre </p>
+                <p>
+                J'ai enfin pu intégrer une formation d'<a href="https://openclassrooms.com/fr" target="_blank" >OpenClassrooms</a> que je souhaitais faire depuis des années, c'est pour celà que je m'évertu à réaliser plusieurs projets et à apprendre à maitriser le plus de technologies possibles. <br/></p>
+            </div>
+        </section>
+        <section class="article">
+            <h2>Mon GitHub</h2>
+            <div>
+                <p>Comme la plupart des développeurs, même les débutants, je possède mon GitHub qui me permet de travailler rapidement et efficacement, grâce à un accès SSH, avec git.</p>
+                <p>L'accès à la plupart de mes projets est ouvert sur mon GitHub <br/>
+                Afin de partager mes fonctionnalités et d'apprendre toujours plus grâce à la critique, je mets mes codes disponibles sur la plate-forme.
+                </p>
+                <p>Retrouvez mon GitHub en cliquant sur <a href="https://github.com/benoitsouillat" target="_blank">ce lien</a></p>
+            </div>
+        </section>
+        <section class="article">
+            <h2>Mes plus</h2>
+            <div>
+                <p>Afin de parfaire mes compétences en développement et d'être le plus utile à mon entreprise, j'ai également appris à mettre en ligne mon site internet via git ou par le protocole FTP.</p>
+                <p>J'ai également monté un serveur à domicile pour l'échange des données (même personnelles), afin de créer des sauvegarde grâce à des tâches CRON, configurer Apache2, MySQL (ou PostgreSQL), simuler l'hébergement de mon site web, ou pouvoir y accéder depuis mon propre réseau (sans internet). <br/>
+                J'ai également découvert l'outil Docker pour éviter la virtualisation trop lourde sur mes machines, et je me suis renseigné sur les tâches d'un Designer afin de pouvoir travailler mieux avec ce metier.</p>
+                <p>Enfin, par passion de découvrir, et de réparer ce qui m'entoure, je sais monter, démonter et nettoyer un PC, toutes mes machines à domicile ont été montées par mes soins.</p>
+            </div>
+        </section>
+    </section>
+</main>
 {% endblock %}

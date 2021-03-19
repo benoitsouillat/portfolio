@@ -1,0 +1,46 @@
+$main-color: black;
+$second-color: white;
+$third-color: goldenrod;
+
+$fourth-color: #275E70;
+
+
+$back-color: darken($second-color, 10);
+$text-color: $main-color;
+$link-color: $third-color;
+
+@mixin left-col {
+    background-color: lighten($main-color, 10);
+    color: darken($second-color, 5);
+
+    border-right: 5px black solid;
+
+    h1, h2, h3, h4 {
+        color: lighten($third-color, 5);
+        text-decoration-color: $third-color;
+    }
+    
+}
+
+@mixin index-article {
+
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border-bottom: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.3rem;
+
+        width: 75%;
+    }
+
+}

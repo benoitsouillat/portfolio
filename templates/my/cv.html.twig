@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %} 
+<main class="cv">
+    <div class="soft-skill">
+        <h3>Mes Soft-Skills</h3>
+        <p><span>Organisation :</span><br/></p>
+        <p>
+            L'organisation est pour moi un qualité primordiale pour devenir développeur, bien que l'anticipation reste importante, elle permet de gagner en productivité lors de la création d'un projet.<br/>
+            Nombreuses sont mes expériences professionnelles dans lesquelles mon organisation a fait la différence, et je me suis vite rendu compte de ma productivité lorsque je prenais le temps d'organiser ma journée.
+        </p>
+        <p><span>Travail d'équipe :</span><br/></p>
+        <p>
+            Je suis très enclin et habitué à travailler en équipe, je suis toujours disponible pour me tourner vers mes collègues qui peuvent avoir besoin de conseils ou de mes compétences. <br/>
+            Je suis très conscient et investi pour mon entreprise et pour permettre une bonne cohésion de groupe.
+        </p>
+    <hr>
+        <p><span>Autonomie :</span><br/></p>
+        <p>
+            Mes multiples expériences, dans différents domaines professionnels, m'ont appris à travailler en autonomie, parfois seul, et surtout à apprendre en permanence pour être toujours à jour et ne pas solliciter mes collègues trop souvent.
+        </p>
+    <hr>
+
+        <h3>Les Langues</h3>
+        <p><span>Français :</span><br/></p>
+        <p> Le français est ma langue natale, je suis de ce fait très habitué à sa conjugaison et son vocabulaire, je fais très peu de fautes d'orthographe surtout si je me relis et je le parle et l'écrit sans problème.
+        </p>
+        <p><span>Anglais :</span><br/></p>
+        <p> Je suis habitué à lire de " l'anglais informatique et technique ", en lisant les docs des technologies par exemple, je le parle un petit peu mais je le comprends plutôt bien et je sais l'écrire également.
+        </p>
+
+    </div>
+    <section>
+        <div class="head-cv">
+            <div>
+                <h2>Benoit Souillat</h2>
+                <h3>Développeur Web Javascript & PHP <br/> (alternance : 3 à 4 jours en entreprise)</h3>
+            </div>
+            <img id="profil-photo" src="/media/img/moi.jpg" alt="ma photo" />
+        </div>
+        <div class="body-cv">
+            <h3> 
+                <span class="fas fa-graduation-cap"></span>
+                Mes diplômes et formations 
+                <span class="fas fa-graduation-cap"></span>
+            </h3>
+            <div>
+                <h4>Développeur Web en alternance <span>(2020 à 2022)</span></h4>
+                <p>Formation d'initiation effectué avec OpenClassrooms afin de valider mes compétences en HTML 5, CSS3, et Javascript, j'ai rejoins le programme Prep'Apprentissage afin de parfaire ma formation et proposer mes services à une entreprise qui a besoin de faire évoluer son activité de développement.</p>
+                <h4>Piscine 42 <span>(Juillet 2019)</span></h4>
+                <p>A la recherche de compétence de développement, et d'une formation en informatique me permettant de progresser et d'intégrer une entreprise pour mettre mes compétences à disposition, j'ai effectué la Piscine de l'école 42 sur le langage C pour apprendre la base du code etde l'informatique, la gestion de la mémoire ou la création de fonction.</p>
+            </div>
+            <h3>
+                <span class="fas fa-briefcase"></span>
+                Mes expériences professionnelles
+                <span class="fas fa-briefcase"></span>
+
+            </h3>
+            <div>
+                <h4>Agent polyvalent de station service & missions d'intérim <span>(Juillet 2020 à Novembre 2020)</span></h4>
+                <p>J'ai travaillé pendant deux mois et demi en station service, et j'ai réalisé plusieurs missions d'intérim, en déménagement et manutention notamment, ce qui m'a habitué à être polyvalent, organisé et à m'adapter rapidement aux besoins de l'entreprise.</p>
+                <h4>Toiletteur / Eleveur Canin <span>(2018 - 2019)</span> </h4>
+                <p>Afin de travailler dans un de mes point d'intéret principal, j'ai également travaillé dans les entreprises de ma famille en tant que toiletteur canin et éleveur.</p>
+                <h4>Facteur courrier-colis <span>(2012 à 2017)</span></h4>
+                <p>J'ai effectué de nombreux CDD au sein du groupe La Poste en tant que facteur, sur des tournées de ville comme Créteil (94) mais aussi de campagne comme Gilly-sur-Loire (71), en voiture ou en vélo, ce qui m'a beaucoup appris sur mon organisation du travail à effectué et de la journée.</p>
+            </div>
+            <h3>
+                <span class="fas fa-laptop-code"></span>
+                Mes compétences informatiques
+                <span class="fas fa-laptop-code"></span>
+            </h3>
+            <div>
+                <h4>HTML 5 et CSS 3</h4>
+                    <p>Possédant déjà beaucoup de connaissances sur la méthode et le fonctionnement d'un site web, avant de débuter mes formations d'OpenClassrooms, j'ai pu me concentrer à connaitre ces deux bases du développement web plus en profondeur.</p>
+                <h4>JAVASCRIPT</h4>
+                    <p>Etant pour moi une base des outils pour développer un site web, et le langage de script le plus connu du web, je me suis bien sur habitué à maitrîser Javascript, je me débrouille très bien avec la documentation, je maitrise les classes et je sais également les extends pour propager les methodes notamment. Je commence évidemment à m'intéresser aux frameworks tels que VueJS ou AngularJS, et bien entendu à la fameuse librairie ReactJS</p>
+                <h4>MY SQL</h4>
+                    <p>Bien que les technologies NOSQL se développent beaucoup et me séduisent également, j'apprends à bien connaître MYSQL ou les technologies adjacentes comme PostgreSQL car je les considère comme des bases de la gestion des données.</p>
+                <h4>PHP</h4>
+                    <p>Jusqu'à présent, pour la plupart de mes projets, j'inserais mes navbars, mes headers et footers ou autres bout de code présents sur chaque page d'un site via un script, mais je me suis vite rendu compte que la methode n'était pas trés adaptée car elle constituait un long fichier de code pour générer les éléments de l'objet document, consommait énormément de ressources sur la machine client et n'affichait pas la page sur les navigateurs qui bloque les scripts, (les anciennes versions de Safari par exemple), je me suis donc tourné vers les technologies PHP grâce à la fonction include particulièrement, et celà me permet d'augmenter mon terrain de maitrise de langages diverses.
+                    </p>
+                <h4>SYMPHONY</h4>
+                    <p>Developpant dernièrement beaucoup d'intérêt pour les technologies PHP, j'ai décidé de commencer mes projets directement avec Symfony pour dompter cette technologie et pouvoir l'ajouter à mes compétences rapidement.</p>
+            </div>
+            <h3>
+                <span class="fas fa-camera-retro"></span>
+                Mes Hobbies et mes loisirs
+                <span class="fas fa-camera-retro"></span>
+            </h3>
+            <div>
+                <h4>Les animaux</h4>
+                <p>Ayant grandi au milieu des chiens, il était évident que je vivrais avec eux, ma femme étant éleveuse, comme l'est également ma mère, et possédant une expérience de toiletteur canin et félin, je partage une grande partie de ma vie et de mon temps avec des chats et des chiens.</p>
+                <h4>La marche ( Cani-Cross )</h4>
+                <p>J'aime également marcher quelques kilomètres, si possible tous les jours, et souvent avec les chiens attachés en cani-cross pour coupler mes activités favorites.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
