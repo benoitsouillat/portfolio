@@ -2,9 +2,10 @@
 
 main {
     display: flex;
+    flex-wrap: wrap;
 
     section {
-        width: 70%;
+        width: 65%;
     }
 }
 

@@ -2,8 +2,49 @@
 
 
 
-{% block body %} 
+{% block body %}
 
+<main>
+    <div class="info-contact">
+        <h2>Benoit Souillat</h2>
+        <p>Développeur Web</p>
+        <p>Tel : <a href="tel:0611800785"> 06 11 80 07 85</a></p>
+        <p>Email : <a href="mailto:'benoit.souillat@gmail.com'">benoit.souillat@gmail.com</a></p>
+        <p>Linkedin : <a href="https://www.linkedin.com/in/benoitsouillat/">benoitsouillat</a></p>
+        <p>Github : <a href="https://github.com/benoitsouillat">benoitsouillat</a></p>
+
+        <hr>
+
+        <h2>Où suis-je :</h2>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3495215496243!2d1.2429892628107884!3d46.286891219755304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fc0728d87459d5%3A0x405d39260e790a0!2s87190%20Saint-L%C3%A9ger-Magnazeix!5e0!3m2!1sfr!2sfr!4v1616171156339!5m2!1sfr!2sfr"></iframe>
+    </div>
+
+    {{ form_start(contactForm, {'attr': {'class': 'form-contact'}}) }}
+
+        <h2>Pour me contacter : </h2>
+
+        {{ form_row(contactForm.name, {'label': 'Votre nom : ', 'attr': {
+            'placeholder': 'Entrez votre nom'
+        }} )}}
+        {{ form_row(contactForm.email, {'label': 'Votre Email : ', 'attr': {
+            'placeholder': 'Entrez votre nom'
+        }} )}}
+        {{ form_row(contactForm.phone, {'label': 'Votre Mobile : ', 'attr': {
+            'placeholder': 'Votre numéro de téléphone'
+        }} )}}
+        {{ form_row(contactForm.message,  {'label': ' ', 'attr': {
+            'placeholder': 'Écrivez votre message.'
+        }} )}}
+
+
+    <button type="submit" class="btn">Envoyer</button>
+
+    <p class="fas fa-coffee"> Je vous remercie pour votre visite sur mon portfolio.</p>
+
+    {{ form_end(contactForm) }}
+
+</main>
 
 
 {% endblock %}
