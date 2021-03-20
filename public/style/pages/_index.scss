@@ -105,6 +105,7 @@ main {
             order: 2;
             box-sizing: border-box;
             padding: 0 10px;
+
             @media all and (max-width: 450px)
             {
                 .techno {
@@ -121,6 +122,16 @@ main {
             max-width: unset;
             width: auto;
             order: 1;
+        }
+        .article {
+            .who-am-i {
+                img {
+                    width: 80px;
+                    height: 80px;
+                    padding: 0;
+                    margin-right: 5px;
+                }
+            }
         }
     }
 }

@@ -435,6 +435,12 @@ main section {
         -ms-flex-order: 1;
             order: 1;
   }
+  main .article .who-am-i img {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin-right: 5px;
+  }
 }
 
 .soft-skill {
