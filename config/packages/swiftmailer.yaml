@@ -1,14 +1,6 @@
 swiftmailer:
     transport: gmail
-    username: dev.souillat@gmail.com
-    password: Lueur87190
+    username: dev.souillat
+    password: Lueur87190!
     host: localhost
-    port: 465
-    encryption: ssl
-    auth-mode: login
     spool: { type: 'memory' }
-    stream-options:
-        ssl:
-            allow_self_signed: true
-            verify_peer: false
-            verify_peer_name: false
