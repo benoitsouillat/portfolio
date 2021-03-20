@@ -375,6 +375,12 @@ main section {
   width: 90%;
 }
 
+.article .who-am-i span {
+  color: green;
+  font-weight: bold;
+  text-shadow: black 1px 1px 3px;
+}
+
 .article a {
   font-weight: unset;
 }

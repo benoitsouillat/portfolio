@@ -18,7 +18,9 @@ class MyController extends AbstractController
      */
     public function accueil(): Response
     {
-        return $this->render('my/index.html.twig');
+        return $this->render('my/index.html.twig', [
+            'onValue' => 'ON',
+        ]);
     }
 
     /**
