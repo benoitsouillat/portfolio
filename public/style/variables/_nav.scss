@@ -6,6 +6,7 @@ nav {
     height: 50px;
     border-bottom: solid lighten($main-color, 10) 5px;
     font-size: 1.2rem;
+    background-image: url("../media/img/nav-bg.jpg");
 
     ul {
         height: 100%;
@@ -25,12 +26,15 @@ nav {
     }
     a {
         text-decoration: none;
-        color: lighten($main-color, 35);
+        color: lighten($main-color, 5);
+        text-shadow: black 1px 1px 1px;
 
         &:hover {
             text-decoration: none;
             transform: scale(1.10);
             color: darken($link-color, 5);
+            text-shadow: black 5px 5px 3px;
+
         }
     }
 }

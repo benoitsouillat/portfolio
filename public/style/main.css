@@ -3,6 +3,7 @@ nav {
   height: 50px;
   border-bottom: solid #1a1a1a 5px;
   font-size: 1.2rem;
+  background-image: url("../media/img/nav-bg.jpg");
 }
 
 nav ul {
@@ -38,7 +39,8 @@ nav li:hover {
 
 nav a {
   text-decoration: none;
-  color: #595959;
+  color: #0d0d0d;
+  text-shadow: black 1px 1px 1px;
 }
 
 nav a:hover {
@@ -46,6 +48,7 @@ nav a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #c4941d;
+  text-shadow: black 5px 5px 3px;
 }
 
 body {
