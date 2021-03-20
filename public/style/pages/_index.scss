@@ -74,6 +74,17 @@ main {
             max-width: unset;
             width: auto;
             order: 2;
+            box-sizing: border-box;
+            padding: 0 10px;
+            @media all and (max-width: 450px)
+            {
+                .techno {
+                    flex-wrap: wrap;
+                    li {
+                        padding: 0 5px;
+                    }
+                }
+            }
         }
         .index-flex
         {
