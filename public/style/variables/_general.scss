@@ -121,3 +121,13 @@ footer {
     }
 
 }
+
+@media all and (max-width:800px)
+{
+    main {
+
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: 100%;
+    }
+}

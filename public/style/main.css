@@ -224,6 +224,15 @@ footer > div > div .btn:hover {
   text-decoration: none;
 }
 
+@media all and (max-width: 800px) {
+  main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,6 +354,25 @@ main section {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+}
+
+@media all and (max-width: 800px) {
+  main .realisation {
+    min-width: unset;
+    max-width: unset;
+    width: auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main .index-flex {
+    min-width: unset;
+    max-width: unset;
+    width: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .soft-skill {
@@ -499,6 +527,25 @@ main section {
   padding-left: 50px;
 }
 
+@media all and (max-width: 800px) {
+  .cv .soft-skill {
+    min-width: unset;
+    max-width: unset;
+    width: auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .cv section {
+    min-width: unset;
+    max-width: unset;
+    width: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .page-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,5 +694,23 @@ main section {
 
 .form-contact .fa-coffee {
   margin-top: 20vh;
+}
+
+@media all and (max-width: 800px) {
+  main .info-contact {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+  main .form-contact {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+  main .form-contact div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 10px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

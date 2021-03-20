@@ -64,3 +64,23 @@ main {
         flex-grow: 2;
     }
 }
+
+@media all and (max-width: 800px)
+{
+    main {
+        .realisation
+        {
+            min-width: unset;
+            max-width: unset;
+            width: auto;
+            order: 2;
+        }
+        .index-flex
+        {
+            min-width: unset;
+            max-width: unset;
+            width: auto;
+            order: 1;
+        }
+    }
+}

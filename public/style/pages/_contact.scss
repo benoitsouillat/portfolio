@@ -90,3 +90,25 @@
 
 
 }
+
+@media all and (max-width: 800px)
+{
+    main {
+        .info-contact {
+            min-width: unset;
+            max-width: unset;
+            width: 100%;
+        }
+        .form-contact {
+            min-width: unset;
+            max-width: unset;
+            width: 100%;
+            div
+            {
+                justify-content: space-around;
+                margin: 10px 0;
+            }
+        }
+    }
+
+}

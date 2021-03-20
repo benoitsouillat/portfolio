@@ -95,3 +95,21 @@
     }
 
 }
+
+@media all and (max-width: 800px)
+{
+    .cv {
+        .soft-skill {
+            min-width: unset;
+            max-width: unset;
+            width: auto;
+            order: 2;
+        }
+        section {
+            min-width: unset;
+            max-width: unset;
+            width: auto;
+            order: 1;
+        }
+    }
+}
